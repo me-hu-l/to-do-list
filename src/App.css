@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-style: italic;
 }
 
 .App-link {
@@ -38,10 +39,67 @@
 }
 
 .list-item{
-  padding-bottom:10px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding: 10px;
+  padding-left: 7px;
   text-align: left;
   margin: 4px;
   border:#61a4fb solid;
+}
+
+.list-item-text{
+  padding: 12px;
+}
+
+.input-form{
+  size: 100px;
+}
+
+#delete{
+  text-align: right;
+}
+
+.btn {
+  position: relative;
+  background-color: #24a3aa;
+  border: none;
+  font-size: 17px;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 12px;
+
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.current-input{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor:auto;
 }
